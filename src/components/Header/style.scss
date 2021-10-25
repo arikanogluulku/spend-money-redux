@@ -1,0 +1,20 @@
+.header {
+  width: 100%;
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 30px 20px;
+  &__image {
+    display: block;
+    width: 125px;
+    height: 125px;
+    border-radius: 125px;
+    margin: 15px auto;
+  }
+  &__title {  
+    text-align: center;
+    font-size:32px;
+    line-height: 1.3em;
+    margin-top:15px;
+    background: none;
+  }
+}

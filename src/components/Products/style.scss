@@ -1,0 +1,73 @@
+.product {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 10px 10px;
+  @media screen and (max-width:830px) {
+  grid-template-columns: repeat(2, minmax(0, 1fr));  
+  }
+  @media screen and (max-width:570px) {
+   grid-template-columns: repeat(1, minmax(0, 1fr));   
+  }
+  &__item {
+    max-width: 100%;
+    background-color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 15px;
+    img {
+      display: block;
+      margin: 15px auto;
+      height: 120px;
+      max-width: 100%;
+      object-fit: contain;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    p {
+      font-size: 20px;
+      color: #24c486;
+    }
+  }
+}
+
+.control {
+  font-size: 20px;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px 10px;
+  margin-top: 25px;
+  input {
+    font-size: 16px;
+    text-align: center;
+    padding: 9px 12px;
+    border-radius: 3px;
+    border: 1px solid #b2bec3;
+    color: #333;
+    font-family: Roboto, sans-serif;
+    width: 100%;
+  }
+  &__button {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 12px;
+    border-radius: 3px;
+    color: #fff;
+    &-sell {
+      background: linear-gradient(180deg, #f53b82, #f53b57);
+      &:disabled {
+        background: #f1f2f6;
+        color: #333;
+      }
+    }
+    &-buy {
+      background: linear-gradient(180deg, #2ecc71, #1abc9c);
+      &:disabled {
+        background: #f1f2f6;
+        color: #333;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.receipt {
+  margin: 20px 0;
+  background-color: #fff;
+  text-align: center;
+  > h1 {
+    font-size: 28px;
+    padding: 15px 15px 25px;
+  }
+  &__item {
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px 0;
+    font-size: 18px;
+    grid-template-columns: 170px 45px 75px;
+    &-name {
+      text-align: left;
+      text-overflow: ellipsis;
+    }
+    &-count {
+      text-align: left;
+    }
+    &-price {
+      color: #24c486;
+      text-align: right;
+      font-weight: 700;
+    }
+  }
+  &__total {
+    font-weight: 700;
+    max-width: 300px;
+    border-top: 1px solid #333;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    &-price {
+      color: #24c486;
+      text-align: right;
+      font-weight: bold;
+    }
+  }
+  &__message{
+    font-size: 16px;
+    padding: 15px 15px 25px; 
+    }
+}
